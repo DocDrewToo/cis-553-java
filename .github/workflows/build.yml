@@ -1,0 +1,23 @@
+#Workflow name
+name: CI/CD Pipeline
+on:
+  #Manually trigger workflow runs
+  workflow_dispatch:
+    inputs:
+      Reason:
+        description: 'Reason for build'
+        required: true
+        default: 'just cause'
+      tags:
+        description: 'Test scenario tags'
+        required: false
+  push:
+    branches:
+      - main
+jobs:
+  printInputs:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Log level: ${{ github.event.inputs.logLevel }}"
+          echo "Tags: ${{ github.event.inputs.tags }}"
