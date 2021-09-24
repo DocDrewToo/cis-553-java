@@ -33,5 +33,5 @@ jobs:
           ls -lAh
       - name: Building with Maven Wrapper
         run: |
-        cd project
-        ./mvnw clean install
+          cd project
+          ./mvnw clean install
