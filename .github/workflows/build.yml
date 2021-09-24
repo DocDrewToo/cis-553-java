@@ -32,4 +32,4 @@ jobs:
           echo "What's here? "
           ls -lAh
       - name: Building with Maven Wrapper
-        run: ./project/mvnw clean install
+        run: cd project | ./mvnw clean install
