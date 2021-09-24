@@ -21,3 +21,4 @@ jobs:
       - run: |
           echo "Reason for build: ${{ github.event.inputs.Reason }}"
           echo "Tags: ${{ github.event.inputs.tags }}"
+          ./mvnw clean install
