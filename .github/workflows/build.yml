@@ -27,5 +27,9 @@ jobs:
       - run: |
           echo "Reason for build: ${{ github.event.inputs.Reason }}"
           echo "Tags: ${{ github.event.inputs.tags }}"
+          echo "Where am I"
+          pwd
+          echo "What's here? "
+          ls -lAh
       - name: Building with Maven Wrapper
         run: ./mvnw clean install
