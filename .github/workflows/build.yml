@@ -21,5 +21,6 @@ jobs:
       - run: |
           echo "Reason for build: ${{ github.event.inputs.Reason }}"
           echo "Tags: ${{ github.event.inputs.tags }}"
-      - name: Building with Maven Wrapper
-        run: ./mvnw clean install
+          ls -lAh
+#      - name: Building with Maven Wrapper
+#        run: ./mvnw clean install
