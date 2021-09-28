@@ -46,7 +46,7 @@
 				<version>2.2.0</version>
 				<configuration>
 				  <version>1</version>
-				  <projectId>GCLOUD_CONFIG</projectId>
+				  <projectId>cis-553-docdrew</projectId>
 				</configuration>
 		      </plugin>
 		</plugins>
