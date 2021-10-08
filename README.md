@@ -1,14 +1,16 @@
 # cis557
 cis557 project
 
+* Setup / build
+* Running / Testing
 
 Download Project:
 ```shell
 git clone https://github.com/DocDrewToo/cis-553-java.git
 ```
 
-To build:
-From: cis-553-java/project/
+# To build:
+From the directory: cis-553-java/project/
 ```shell
 /mvnw clean install
 ```
@@ -24,4 +26,7 @@ gcloud app create --region us-central
 ./mvnw appengine:deploy
 ```
 
+After running, the following URL can be used to verify the app is running:
 
+http://localhost:8080/greeting
+http://localhost:8080/swagger-ui.html
