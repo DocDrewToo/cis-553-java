@@ -28,5 +28,17 @@ gcloud app create --region us-central
 
 After running, the following URL can be used to verify the app is running:
 
+Custom API
 http://localhost:8080/greeting
+
+Always up-to-date docs on all API's
 http://localhost:8080/swagger-ui.html
+
+Built in H2 database  
+http://localhost:8080/h2-console  
+
+Where:  
+> Driver Class: = `org.h2.Driver`  
+> JDBC URL: = `jdbc:h2:mem:testdb`  
+> User Name: `admin`  
+> Password: `h2-admin` 
