@@ -9,12 +9,13 @@ Download Project:
 git clone https://github.com/DocDrewToo/cis-553-java.git
 ```
 
-# To build:
+# Build:
 From the directory: cis-553-java/project/
 ```shell
 /mvnw clean install
 ```
 
+# Deploy (to GCP)
 To Deploy to GCP App Engine
 From Google Console
 ```shell
@@ -26,9 +27,15 @@ gcloud app create --region us-central
 ./mvnw appengine:deploy
 ```
 
-After running, the following URL can be used to verify the app is running:
+# Deploy (locally)
+* Manual Execution from command line: 
+`./mvnw spring-boot:run`
 
-## Application Endpoints:
+# Deploy (via IntelliJ)
+* Just press the 'run' button
+
+
+# Application Endpoints:
 1. Rest endpoint directly:
   http://localhost:8080/greeting
 
