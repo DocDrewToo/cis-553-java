@@ -1,5 +1,11 @@
+#Mac Files
+.DS_Store
+
 # Compiled class file
 *.class
+
+# IntelliJ docs
+.idea
 
 # Log file
 *.log
